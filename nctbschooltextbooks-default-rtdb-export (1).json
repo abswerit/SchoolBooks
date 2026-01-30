@@ -1,0 +1,1522 @@
+{
+  "classes": [
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        }
+      ],
+      "classNameBn": "প্রাইমারি ১ম শ্রেণি",
+      "classNameEn": "Primary Class 1",
+      "classTag": "primary_1"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Math.EV.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ১ম শ্রেণি",
+      "classNameEn": "EV Class 1",
+      "classTag": "ev_primary_1"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.2.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        }
+      ],
+      "classNameBn": "প্রাইমারি ২য় শ্রেণি",
+      "classNameEn": "Primary Class 2",
+      "classTag": "primary_2"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.2.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Math.EV.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ২য় শ্রেণি",
+      "classNameEn": "EV Class 2",
+      "classTag": "ev_primary_2"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://nctb0.wordpress.com/wp-content/uploads/2025/06/class-3-buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion"
+        }
+      ],
+      "classNameBn": "প্রাইমারি ৩য় শ্রেণি",
+      "classNameEn": "Primary Class 3",
+      "classTag": "primary_3"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৩য় শ্রেণি",
+      "classNameEn": "EV Class 3",
+      "classTag": "ev_primary_3"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion"
+        }
+      ],
+      "classNameBn": "প্রাইমারি ৪র্থ শ্রেণি",
+      "classNameEn": "Primary Class 4",
+      "classTag": "primary_4"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৪র্থ শ্রেণি",
+      "classNameEn": "EV Class 4",
+      "classTag": "ev_primary_4"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion"
+        }
+      ],
+      "classNameBn": "প্রাইমারি ৫ম শ্রেণি",
+      "classNameEn": "Primary Class 5",
+      "classTag": "primary_5"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Bangla.pdf",
+          "subjectNameBn": "আমার বাংলা বই",
+          "subjectNameEn": "Bangla"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৫ম শ্রেণি",
+      "classNameEn": "EV Class 5",
+      "classTag": "ev_primary_5"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Charupath.pdf",
+          "subjectNameBn": "চারুপাঠ",
+          "subjectNameEn": "Charupath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Anandopath.pdf",
+          "subjectNameBn": "আনন্দপাঠ",
+          "subjectNameEn": "Anandapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Bangla.Bakoron.pdf",
+          "subjectNameBn": "বাংলা ব্যাকরণ",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.English.pdf",
+          "subjectNameBn": "English For Today",
+          "subjectNameEn": "English For Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.English.Gerammar.pdf",
+          "subjectNameBn": "English Grammmar",
+          "subjectNameEn": "English Grammmar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.ICT.pdf",
+          "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি",
+          "subjectNameEn": "ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Physical.pdf",
+          "subjectNameBn": "শারীরিক শিক্ষা ও স্বাস্থ্য",
+          "subjectNameEn": "Physical Education and Health"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Works.pdf",
+          "subjectNameBn": "কর্ম ও জীবনমুখী শিক্ষা",
+          "subjectNameEn": "Work and Life Oriented Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Agriculture.pdf",
+          "subjectNameBn": "কৃষি শিক্ষা",
+          "subjectNameEn": "Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Home.Science.pdf",
+          "subjectNameBn": "গার্হস্থ্য বিজ্ঞান",
+          "subjectNameEn": "Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Art.pdf",
+          "subjectNameBn": "চারু ও কারুকলা",
+          "subjectNameEn": "Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion"
+        }
+      ],
+      "classNameBn": "মাধ্যমিক ৬ষ্ঠ শ্রেণি",
+      "classNameEn": "Secondary Class 6",
+      "classTag": "secondary_6"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Charupath.pdf",
+          "subjectNameBn": "Charupath",
+          "subjectNameEn": "Charupath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Anandopath.pdf",
+          "subjectNameBn": "Anandapath",
+          "subjectNameEn": "Anandapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Bangla.Bakoron.pdf",
+          "subjectNameBn": "Bangla Bakoron",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.English.pdf",
+          "subjectNameBn": "English For Today",
+          "subjectNameEn": "English For Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.English.Gerammar.pdf",
+          "subjectNameBn": "English Grammmar",
+          "subjectNameEn": "English Grammmar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.ICT.pdf",
+          "subjectNameBn": "Information and Communication Technology",
+          "subjectNameEn": "EV ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Physical.pdf",
+          "subjectNameBn": "Physical Education and Health",
+          "subjectNameEn": "EV Physical Education and Health"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Works.pdf",
+          "subjectNameBn": "Work and Life Oriented Education",
+          "subjectNameEn": "EV Work and Life Oriented Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Agriculture.pdf",
+          "subjectNameBn": "Agriculture Studies",
+          "subjectNameEn": "EV Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Home.Science.pdf",
+          "subjectNameBn": "Home Science",
+          "subjectNameEn": "EV Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Art.pdf",
+          "subjectNameBn": "Arts and Crafts",
+          "subjectNameEn": "EV Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/EV.Class.6.-.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৬ষ্ঠ শ্রেণি",
+      "classNameEn": "EV Class 6",
+      "classTag": "ev_secondary_6"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Saptabarna.pdf",
+          "subjectNameBn": "সপ্তবর্ণা",
+          "subjectNameEn": "Shaptabarna"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Anandapatha.pdf",
+          "subjectNameBn": "আনন্দপাঠ",
+          "subjectNameEn": "Anandapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Bangla.Bakoron.pdf",
+          "subjectNameBn": "বাংলা ব্যাকরণ",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.English.pdf",
+          "subjectNameBn": "English For Today",
+          "subjectNameEn": "English For Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.English.Grammar.pdf",
+          "subjectNameBn": "English Grammmar",
+          "subjectNameEn": "English Grammmar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.ICT.pdf",
+          "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি",
+          "subjectNameEn": "ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Physical.pdf",
+          "subjectNameBn": "শারীরিক শিক্ষা ও স্বাস্থ্য",
+          "subjectNameEn": "Physical Education and Health"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Work.pdf",
+          "subjectNameBn": "কর্ম ও জীবনমুখী শিক্ষা",
+          "subjectNameEn": "Work and Life Oriented Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Agriculture.pdf",
+          "subjectNameBn": "কৃষি শিক্ষা",
+          "subjectNameEn": "Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Home.Science.pdf",
+          "subjectNameBn": "গার্হস্থ্য বিজ্ঞান",
+          "subjectNameEn": "Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Art.pdf",
+          "subjectNameBn": "চারু ও কারুকলা",
+          "subjectNameEn": "Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion"
+        }
+      ],
+      "classNameBn": "মাধ্যমিক ৭ম শ্রেণি",
+      "classNameEn": "Secondary Class 7",
+      "classTag": "secondary_7"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Saptabarna.pdf",
+          "subjectNameBn": "Saptabarna",
+          "subjectNameEn": "Saptabarna"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Anandapatha.pdf",
+          "subjectNameBn": "Anandapath",
+          "subjectNameEn": "Anandapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Bangla.Bakoron.pdf",
+          "subjectNameBn": "Bangla Bakaron",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.English.pdf",
+          "subjectNameBn": "English For Today",
+          "subjectNameEn": "English For Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.English.Grammar.pdf",
+          "subjectNameBn": "English Grammmar",
+          "subjectNameEn": "English Grammmar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.ICT.pdf",
+          "subjectNameBn": "Information and Communication Technology",
+          "subjectNameEn": "EV ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Physical.pdf",
+          "subjectNameBn": "Physical Education and Health",
+          "subjectNameEn": "EV Physical Education and Health"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Works.pdf",
+          "subjectNameBn": "Work and Life Oriented Education",
+          "subjectNameEn": "EV Work and Life Oriented Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Agriculture.pdf",
+          "subjectNameBn": "Agriculture Studies",
+          "subjectNameEn": "EV Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Home.Science.pdf",
+          "subjectNameBn": "Home Science",
+          "subjectNameEn": "EV Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Art.pdf",
+          "subjectNameBn": "Arts and Crafts",
+          "subjectNameEn": "EV Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/EV.Class.7.-.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৭ম শ্রেণি",
+      "classNameEn": "EV Class 7",
+      "classTag": "ev_secondary_7"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Sahitya.Konika.pdf",
+          "subjectNameBn": "সাহিত্য-কণিকা",
+          "subjectNameEn": "Sahitya Kanika"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Anandapath.pdf",
+          "subjectNameBn": "আনন্দপাঠ",
+          "subjectNameEn": "Anandapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Bangla.Bakoron.pdf",
+          "subjectNameBn": "বাংলা ব্যাকরণ",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.English.pdf",
+          "subjectNameBn": "English For Today",
+          "subjectNameEn": "English For Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.English.Grammar.pdf",
+          "subjectNameBn": "English Grammmar",
+          "subjectNameEn": "English Grammmar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.ICT.pdf",
+          "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি",
+          "subjectNameEn": "ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Physical.pdf",
+          "subjectNameBn": "শারীরিক শিক্ষা ও স্বাস্থ্য",
+          "subjectNameEn": "Physical Education and Health"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Works.pdf",
+          "subjectNameBn": "কর্ম ও জীবনমুখী শিক্ষা",
+          "subjectNameEn": "Work and Life Oriented Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Agriculture.pdf",
+          "subjectNameBn": "কৃষি শিক্ষা",
+          "subjectNameEn": "Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Home.Science.pdf",
+          "subjectNameBn": "গার্হস্থ্য বিজ্ঞান",
+          "subjectNameEn": "Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Art.pdf",
+          "subjectNameBn": "চারু ও কারুকলা",
+          "subjectNameEn": "Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion"
+        }
+      ],
+      "classNameBn": "মাধ্যমিক ৮ম শ্রেণি",
+      "classNameEn": "Secondary Class 8",
+      "classTag": "secondary_8"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Sahitya.Konika.pdf",
+          "subjectNameBn": "সাহিত্য-কণিকা",
+          "subjectNameEn": "Sahitya Kanika"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Anandapath.pdf",
+          "subjectNameBn": "আনন্দপাঠ",
+          "subjectNameEn": "Anandapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Bangla.Bakoron.pdf",
+          "subjectNameBn": "বাংলা ব্যাকরণ",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.English.pdf",
+          "subjectNameBn": "English For Today",
+          "subjectNameEn": "English For Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.English.Grammar.pdf",
+          "subjectNameBn": "English Grammmar",
+          "subjectNameEn": "English Grammmar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh and Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.ICT.pdf",
+          "subjectNameBn": "Information and Communication Technology",
+          "subjectNameEn": "EV ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Physical.pdf",
+          "subjectNameBn": "Physical Education and Health",
+          "subjectNameEn": "EV Physical Education and Health"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Works.pdf",
+          "subjectNameBn": "Work and Life Oriented Education",
+          "subjectNameEn": "EV Work and Life Oriented Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Agriculture.pdf",
+          "subjectNameBn": "Agriculture Studies",
+          "subjectNameEn": "EV Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Home.Science.pdf",
+          "subjectNameBn": "Home Science",
+          "subjectNameEn": "EV Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Art.pdf",
+          "subjectNameBn": "Arts and Crafts",
+          "subjectNameEn": "EV Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/EV.Class.8.-.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৮ম শ্রেণি",
+      "classNameEn": "EV Class 8",
+      "classTag": "ev_secondary_8"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Sahitya.pdf",
+          "subjectNameBn": "বাংলা সাহিত্য",
+          "subjectNameEn": "Bangla Shahitya"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Sahopath.pdf",
+          "subjectNameBn": "বাংলা সহপাঠ",
+          "subjectNameEn": "Bangla Sahapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Bakoron.pdf",
+          "subjectNameBn": "বাংলা ব্যাকরণ",
+          "subjectNameEn": "Bangla 2nd Paper"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English for Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.English.Grammar.pdf",
+          "subjectNameBn": "English Grammar",
+          "subjectNameEn": "English Grammar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Math.pdf",
+          "subjectNameBn": "গণিত",
+          "subjectNameEn": "Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.ICT.pdf",
+          "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি",
+          "subjectNameEn": "ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Science.pdf",
+          "subjectNameBn": "বিজ্ঞান",
+          "subjectNameEn": "Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Physics.pdf",
+          "subjectNameBn": "পদার্থ বিজ্ঞান",
+          "subjectNameEn": "Physics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Chemistry.pdf",
+          "subjectNameBn": "রসায়ন",
+          "subjectNameEn": "Chemistry"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Biology.pdf",
+          "subjectNameBn": "জীব বিজ্ঞান",
+          "subjectNameEn": "Biology"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Higher.Math.pdf",
+          "subjectNameBn": "উচ্চতর গণিত",
+          "subjectNameEn": "Higher Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Geography.pdf",
+          "subjectNameBn": "ভূগোল ও পরিবেশ",
+          "subjectNameEn": "Geography and Environment"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Economics.pdf",
+          "subjectNameBn": "অর্থনীতি",
+          "subjectNameEn": "Economics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Civics.pdf",
+          "subjectNameBn": "পৌরনীতি ও নাগরিকতা",
+          "subjectNameEn": "Civics and Citizenship"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Accounting.pdf",
+          "subjectNameBn": "হিসাব বিজ্ঞান",
+          "subjectNameEn": "Accounting"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Finance.pdf",
+          "subjectNameBn": "ফিনান্স ও ব্যাংকিং",
+          "subjectNameEn": "Finance and Banking"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Entrepreneurship.pdf",
+          "subjectNameBn": "ব্যবসায় উদ্যোগ",
+          "subjectNameEn": "Business Entrepreneurship"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Career.pdf",
+          "subjectNameBn": "ক্যারিয়ার শিক্ষা",
+          "subjectNameEn": "Career Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.BGS.pdf",
+          "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়",
+          "subjectNameEn": "Bangladesh And Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Art.pdf",
+          "subjectNameBn": "চারু ও কারুকলা",
+          "subjectNameEn": "Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.History.pdf",
+          "subjectNameBn": "বাংলাদেশের ইতিহাস ও বিশ্ব সভ্যতা",
+          "subjectNameEn": "History of Bangladesh and World Civilization"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Physical.pdf",
+          "subjectNameBn": "শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা",
+          "subjectNameEn": "Physical Education, Health Science and Sports"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Agriculture.pdf",
+          "subjectNameBn": "কৃষি শিক্ষা",
+          "subjectNameEn": "Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Home.Science.pdf",
+          "subjectNameBn": "গার্হস্থ্য বিজ্ঞান",
+          "subjectNameEn": "Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Islam.pdf",
+          "subjectNameBn": "ইসলাম শিক্ষা",
+          "subjectNameEn": "Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Hindu.pdf",
+          "subjectNameBn": "হিন্দুধর্ম শিক্ষা",
+          "subjectNameEn": "Hindu Religion Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Christian.pdf",
+          "subjectNameBn": "খ্রিস্টানধর্ম শিক্ষা",
+          "subjectNameEn": "Christian Religion Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Buddhist.pdf",
+          "subjectNameBn": "বৌদ্ধধর্ম শিক্ষা",
+          "subjectNameEn": "Buddhist Religion Studies"
+        }
+      ],
+      "classNameBn": "এসএসসি ৯ম-১০ম",
+      "classNameEn": "SSC Class 9-10",
+      "classTag": "ssc_9_10"
+    },
+    {
+      "books": [
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Sahitya.pdf",
+          "subjectNameBn": "Bangla Sahitya",
+          "subjectNameEn": "Bangla Sahitya"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Sahopath.pdf",
+          "subjectNameBn": "Bangla Sahapath",
+          "subjectNameEn": "Bangla Sahapath"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Bakoron.pdf",
+          "subjectNameBn": "Bangla Byakoron",
+          "subjectNameEn": "Bangla Byakoron"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.English.pdf",
+          "subjectNameBn": "English for Today",
+          "subjectNameEn": "English for Today"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.English.Grammar.pdf",
+          "subjectNameBn": "English Grammar",
+          "subjectNameEn": "English Grammar"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Math.pdf",
+          "subjectNameBn": "Mathematics",
+          "subjectNameEn": "EV Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.ICT-9.pdf",
+          "subjectNameBn": "Information and Communication Technology",
+          "subjectNameEn": "EV ICT"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Science.pdf",
+          "subjectNameBn": "Science",
+          "subjectNameEn": "EV Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Physics.pdf",
+          "subjectNameBn": "Physics",
+          "subjectNameEn": "EV Physics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Chemistry.pdf",
+          "subjectNameBn": "Chemistry",
+          "subjectNameEn": "EV Chemistry"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Biology.pdf",
+          "subjectNameBn": "Biology",
+          "subjectNameEn": "EV Biology"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Higher.Mathe.pdf",
+          "subjectNameBn": "Higher Math",
+          "subjectNameEn": "EV Higher Mathematics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Geography.pdf",
+          "subjectNameBn": "Geography and Environment",
+          "subjectNameEn": "EV Geography and Environment"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Economics.pdf",
+          "subjectNameBn": "Economics",
+          "subjectNameEn": "EV Economics"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Civics.pdf",
+          "subjectNameBn": "Civics and Citizenship",
+          "subjectNameEn": "EV Civics and Citizenship"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Accounting.pdf",
+          "subjectNameBn": "Accounting",
+          "subjectNameEn": "EV Accounting"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Finance.pdf",
+          "subjectNameBn": "Finance and Banking",
+          "subjectNameEn": "EV Finance and Banking"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Entrepreneurship.pdf",
+          "subjectNameBn": "Business Entrepreneurship",
+          "subjectNameEn": "EV Business Entrepreneurship"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Carrer.pdf",
+          "subjectNameBn": "Career Education",
+          "subjectNameEn": "EV Career Education"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.BGS.pdf",
+          "subjectNameBn": "Bangladesh and Global Studies",
+          "subjectNameEn": "EV Bangladesh And Global Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Art.pdf",
+          "subjectNameBn": "Arts and Crafts",
+          "subjectNameEn": "EV Arts and Crafts"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.History.pdf",
+          "subjectNameBn": "History of Bangladesh and World Civilization",
+          "subjectNameEn": "EV History of Bangladesh and World Civilization"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Physical.pdf",
+          "subjectNameBn": "Physical Education, Health Science and Sports",
+          "subjectNameEn": "EV Physical Education, Health Science and Sports"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Agriculture.pdf",
+          "subjectNameBn": "Agriculture Studies",
+          "subjectNameEn": "EV Agriculture Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Home.Science.pdf",
+          "subjectNameBn": "Home Science",
+          "subjectNameEn": "EV Home Science"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Islam.pdf",
+          "subjectNameBn": "Islamic Studies",
+          "subjectNameEn": "EV Islamic Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Hindu.pdf",
+          "subjectNameBn": "Hindu Religion Studies",
+          "subjectNameEn": "EV Hindu Religion Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Christian.pdf",
+          "subjectNameBn": "Christian Religion Studies",
+          "subjectNameEn": "EV Christian Religion Studies"
+        },
+        {
+          "downloaded": false,
+          "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/EV.Class.9-10.Buddhist.pdf",
+          "subjectNameBn": "Buddhist Religion Studies",
+          "subjectNameEn": "EV Buddhist Religion Studies"
+        }
+      ],
+      "classNameBn": "ইং. মাধ্যম ৯ম-১০ম",
+      "classNameEn": "EV Class 9-10",
+      "classTag": "ev_ssc_9_10"
+    }
+  ]
+}
