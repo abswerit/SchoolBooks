@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCTB ডিজিটাল পাঠ্যপুস্তক লাইব্রেরি</title>
+    <title>NCTB স্মার্ট লাইব্রেরি | ডিজিটাল শিক্ষা</title>
     
     <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -14,6 +14,22 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#3B82F6',
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,22 +37,24 @@
     <style>
         body {
             font-family: 'Hind Siliguri', sans-serif;
-            background-color: #f3f4f6;
+            background-color: #F3F4F6;
+            -webkit-font-smoothing: antialiased;
         }
-        /* Hide scrollbar for clean UI */
-        .no-scrollbar::-webkit-scrollbar {
+        .hide-scroll::-webkit-scrollbar {
             display: none;
         }
-        .no-scrollbar {
+        .hide-scroll {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        .book-card:hover {
-            transform: translateY(-5px);
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+        .glass-dark {
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(12px);
         }
     </style>
 </head>
@@ -44,489 +62,337 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        // --- ICONS COMPONENTS (Inline SVGs to fix React Error #130) ---
-        const Icon = ({ children, size = 24, className = "" }) => (
-            <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width={size} 
-                height={size} 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                className={className}
-            >
-                {children}
+        // --- ICONS (SVG Components) ---
+        const Icon = ({ path, size = 24, className = "" }) => (
+            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+                {path}
             </svg>
         );
 
-        const BookOpen = (props) => (
-            <Icon {...props}>
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-            </Icon>
-        );
-
-        const Download = (props) => (
-            <Icon {...props}>
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-            </Icon>
-        );
-
-        const Search = (props) => (
-            <Icon {...props}>
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </Icon>
-        );
-
-        const Menu = (props) => (
-            <Icon {...props}>
-                <line x1="3" y1="12" x2="21" y2="12" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <line x1="3" y1="18" x2="21" y2="18" />
-            </Icon>
-        );
-
-        const X = (props) => (
-            <Icon {...props}>
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-            </Icon>
-        );
-
-        const ChevronRight = (props) => (
-            <Icon {...props}>
-                <polyline points="9 18 15 12 9 6" />
-            </Icon>
-        );
-
-        const Book = (props) => (
-            <Icon {...props}>
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-            </Icon>
-        );
-
-        const GraduationCap = (props) => (
-            <Icon {...props}>
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                <path d="M6 12v5c3 3 9 3 12 0v-5" />
-            </Icon>
-        );
-
-        const Monitor = (props) => (
-            <Icon {...props}>
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-            </Icon>
-        );
-
-        const FlaskConical = (props) => (
-            <Icon {...props}>
-                <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2" />
-                <path d="M8.5 2h7" />
-                <path d="M7 16h10" />
-            </Icon>
-        );
-
-        const Calculator = (props) => (
-            <Icon {...props}>
-                <rect x="4" y="2" width="16" height="20" rx="2" />
-                <line x1="8" y1="6" x2="16" y2="6" />
-                <line x1="16" y1="14" x2="16" y2="18" />
-                <path d="M16 10h.01" />
-                <path d="M12 10h.01" />
-                <path d="M8 10h.01" />
-                <path d="M12 14h.01" />
-                <path d="M8 14h.01" />
-                <path d="M12 18h.01" />
-                <path d="M8 18h.01" />
-            </Icon>
-        );
-
-        // --- DATA ---
-        const BOOK_DATA = {
-          "classes": [
-            {
-              "books": [
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" }
-              ],
-              "classNameBn": "প্রাইমারি ১ম শ্রেণি",
-              "classNameEn": "Primary Class 1",
-              "classTag": "primary_1"
-            },
-            {
-              "books": [
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.1.Math.EV.pdf", "subjectNameBn": "Mathematics", "subjectNameEn": "EV Mathematics" }
-              ],
-              "classNameBn": "ইং. মাধ্যম ১ম শ্রেণি",
-              "classNameEn": "EV Class 1",
-              "classTag": "ev_primary_1"
-            },
-            {
-              "books": [
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.2.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" }
-              ],
-              "classNameBn": "প্রাইমারি ২য় শ্রেণি",
-              "classNameEn": "Primary Class 2",
-              "classTag": "primary_2"
-            },
-            {
-              "books": [
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.2.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "downloaded": false, "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class-2.Math.EV.pdf", "subjectNameBn": "Mathematics", "subjectNameEn": "EV Mathematics" }
-              ],
-              "classNameBn": "ইং. মাধ্যম ২য় শ্রেণি",
-              "classNameEn": "EV Class 2",
-              "classTag": "ev_primary_2"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.BGS.pdf", "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়", "subjectNameEn": "Bangladesh and Global Studies" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Islam.pdf", "subjectNameBn": "ইসলাম শিক্ষা", "subjectNameEn": "Islamic Studies" }
-              ],
-              "classNameBn": "প্রাইমারি ৩য় শ্রেণি",
-              "classNameEn": "Primary Class 3",
-              "classTag": "primary_3"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.3.-.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Math.pdf", "subjectNameBn": "Mathematics", "subjectNameEn": "EV Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.3.-.Science.pdf", "subjectNameBn": "Science", "subjectNameEn": "EV Science" }
-              ],
-              "classNameBn": "ইং. মাধ্যম ৩য় শ্রেণি",
-              "classNameEn": "EV Class 3",
-              "classTag": "ev_primary_3"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.BGS.pdf", "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়", "subjectNameEn": "BGS" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Islam.pdf", "subjectNameBn": "ইসলাম শিক্ষা", "subjectNameEn": "Islamic Studies" }
-              ],
-              "classNameBn": "প্রাইমারি ৪র্থ শ্রেণি",
-              "classNameEn": "Primary Class 4",
-              "classTag": "primary_4"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.4.-.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Math.pdf", "subjectNameBn": "Mathematics", "subjectNameEn": "EV Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.4.-.Science.pdf", "subjectNameBn": "Science", "subjectNameEn": "EV Science" }
-              ],
-              "classNameBn": "ইং. মাধ্যম ৪র্থ শ্রেণি",
-              "classNameEn": "EV Class 4",
-              "classTag": "ev_primary_4"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.BGS.pdf", "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়", "subjectNameEn": "BGS" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Islam.pdf", "subjectNameBn": "ইসলাম শিক্ষা", "subjectNameEn": "Islamic Studies" }
-              ],
-              "classNameBn": "প্রাইমারি ৫ম শ্রেণি",
-              "classNameEn": "Primary Class 5",
-              "classTag": "primary_5"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.Bangla.pdf", "subjectNameBn": "আমার বাংলা বই", "subjectNameEn": "Bangla" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/Class.5.-.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Math.pdf", "subjectNameBn": "Mathematics", "subjectNameEn": "EV Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/NCTBSC/EV.Class.5.-.Science.pdf", "subjectNameBn": "Science", "subjectNameEn": "EV Science" }
-              ],
-              "classNameBn": "ইং. মাধ্যম ৫ম শ্রেণি",
-              "classNameEn": "EV Class 5",
-              "classTag": "ev_primary_5"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Charupath.pdf", "subjectNameBn": "চারুপাঠ", "subjectNameEn": "Charupath" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.English.pdf", "subjectNameBn": "English For Today", "subjectNameEn": "English For Today" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.BGS.pdf", "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়", "subjectNameEn": "BGS" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL6/Class.6.-.ICT.pdf", "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি", "subjectNameEn": "ICT" }
-              ],
-              "classNameBn": "মাধ্যমিক ৬ষ্ঠ শ্রেণি",
-              "classNameEn": "Secondary Class 6",
-              "classTag": "secondary_6"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Saptabarna.pdf", "subjectNameBn": "সপ্তবর্ণা", "subjectNameEn": "Saptabarna" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.English.pdf", "subjectNameBn": "English For Today", "subjectNameEn": "English For Today" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.BGS.pdf", "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়", "subjectNameEn": "BGS" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL7/Class.7.-.ICT.pdf", "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি", "subjectNameEn": "ICT" }
-              ],
-              "classNameBn": "মাধ্যমিক ৭ম শ্রেণি",
-              "classNameEn": "Secondary Class 7",
-              "classTag": "secondary_7"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Sahitya.Konika.pdf", "subjectNameBn": "সাহিত্য-কণিকা", "subjectNameEn": "Sahitya Kanika" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.English.pdf", "subjectNameBn": "English For Today", "subjectNameEn": "English For Today" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL8/Class.8.-.ICT.pdf", "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি", "subjectNameEn": "ICT" }
-              ],
-              "classNameBn": "মাধ্যমিক ৮ম শ্রেণি",
-              "classNameEn": "Secondary Class 8",
-              "classTag": "secondary_8"
-            },
-            {
-              "books": [
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Bangla.Sahitya.pdf", "subjectNameBn": "বাংলা সাহিত্য", "subjectNameEn": "Bangla Shahitya" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.English.pdf", "subjectNameBn": "English for Today", "subjectNameEn": "English for Today" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Math.pdf", "subjectNameBn": "গণিত", "subjectNameEn": "Mathematics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Science.pdf", "subjectNameBn": "বিজ্ঞান", "subjectNameEn": "Science" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Physics.pdf", "subjectNameBn": "পদার্থ বিজ্ঞান", "subjectNameEn": "Physics" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Chemistry.pdf", "subjectNameBn": "রসায়ন", "subjectNameEn": "Chemistry" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.Biology.pdf", "subjectNameBn": "জীব বিজ্ঞান", "subjectNameEn": "Biology" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.ICT.pdf", "subjectNameBn": "তথ্য ও যোগাযোগ প্রযুক্তি", "subjectNameEn": "ICT" },
-                { "pdfUrl": "https://github.com/abswerit/SchoolBooks/releases/download/SCCL9-10/Class.9-10.BGS.pdf", "subjectNameBn": "বাংলাদেশ ও বিশ্ব পরিচয়", "subjectNameEn": "BGS" }
-              ],
-              "classNameBn": "এসএসসি ৯ম-১০ম",
-              "classNameEn": "SSC Class 9-10",
-              "classTag": "ssc_9_10"
-            }
-          ]
+        const Icons = {
+            Menu: <path d="M3 12h18M3 6h18M3 18h18" />,
+            X: <path d="M18 6 6 18M6 6l12 12" />,
+            Search: <React.Fragment><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></React.Fragment>,
+            BookOpen: <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />,
+            Download: <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />,
+            ChevronRight: <path d="m9 18 6-6-6-6" />,
+            Home: <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />,
+            Graduation: <path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c3 3 9 3 12 0v-5" />,
+            Flask: <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2M8.5 2h7M7 16h10" />,
+            Calculator: <React.Fragment><rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01" /></React.Fragment>,
+            Laptop: <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" />,
+            Palette: <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1-4.825 4.825 10.744 10.744 0 0 1-6.38 1.264c-.9.037-1.393-.84-.98-1.55L14 10M10.733 5.076a2.5 2.5 0 0 0-4.025.266l-1.636 2.05a2.5 2.5 0 0 0 .502 3.659l2.25 1.5M10.733 5.076c1.192.174 2.37.544 3.5 1.104" />,
+            Globe: <React.Fragment><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" /></React.Fragment>,
+            Moon: <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />,
+            Loader: <path d="M21 12a9 9 0 1 1-6.219-8.56" />
         };
 
         const { useState, useEffect } = React;
 
-        // Subject Icon Mapper
-        const getIconForSubject = (subjectEn) => {
+        // --- UTILS: Get Style based on Subject ---
+        const getSubjectStyle = (subjectEn = "") => {
             const sub = subjectEn.toLowerCase();
-            if (sub.includes('math') || sub.includes('account')) return <Calculator size={32} className="text-emerald-600" />;
-            if (sub.includes('science') || sub.includes('physics') || sub.includes('chem') || sub.includes('bio')) return <FlaskConical size={32} className="text-teal-600" />;
-            if (sub.includes('ict') || sub.includes('computer')) return <Monitor size={32} className="text-blue-600" />;
-            if (sub.includes('english')) return <span className="text-3xl font-bold text-indigo-600">E</span>;
-            if (sub.includes('bangla')) return <span className="text-3xl font-bold text-green-700">অ</span>;
-            return <BookOpen size={32} className="text-emerald-500" />;
+            if (sub.includes('math') || sub.includes('account') || sub.includes('finance')) 
+                return { gradient: "from-blue-500 to-cyan-400", icon: Icons.Calculator, shadow: "shadow-blue-200" };
+            if (sub.includes('science') || sub.includes('physics') || sub.includes('chem') || sub.includes('bio')) 
+                return { gradient: "from-purple-500 to-indigo-400", icon: Icons.Flask, shadow: "shadow-purple-200" };
+            if (sub.includes('ict') || sub.includes('computer')) 
+                return { gradient: "from-slate-700 to-slate-500", icon: Icons.Laptop, shadow: "shadow-slate-200" };
+            if (sub.includes('english')) 
+                return { gradient: "from-rose-500 to-pink-400", icon: null, text: "E", shadow: "shadow-pink-200" };
+            if (sub.includes('bangla')) 
+                return { gradient: "from-emerald-500 to-teal-400", icon: null, text: "অ", shadow: "shadow-emerald-200" };
+            if (sub.includes('religion') || sub.includes('islam') || sub.includes('hindu')) 
+                return { gradient: "from-amber-500 to-orange-400", icon: Icons.Moon, shadow: "shadow-amber-200" };
+            if (sub.includes('art')) 
+                return { gradient: "from-fuchsia-500 to-purple-400", icon: Icons.Palette, shadow: "shadow-fuchsia-200" };
+            if (sub.includes('bgs') || sub.includes('global') || sub.includes('history')) 
+                return { gradient: "from-sky-500 to-blue-400", icon: Icons.Globe, shadow: "shadow-sky-200" };
+            
+            return { gradient: "from-emerald-500 to-green-400", icon: Icons.BookOpen, shadow: "shadow-emerald-200" };
         };
 
+        // --- COMPONENT: Book Card ---
+        const BookCard = ({ book, onClick }) => {
+            const style = getSubjectStyle(book.subjectNameEn);
+            
+            return (
+                <div className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col h-full">
+                    {/* Cover Art */}
+                    <div className={`h-40 w-full bg-gradient-to-br ${style.gradient} relative flex items-center justify-center overflow-hidden`}>
+                        {/* Decorative Circles */}
+                        <div className="absolute -top-6 -right-6 w-24 h-24 bg-white opacity-20 rounded-full blur-xl"></div>
+                        <div className="absolute bottom-[-20px] left-[-20px] w-20 h-20 bg-black opacity-10 rounded-full blur-xl"></div>
+                        
+                        {/* Icon/Text */}
+                        <div className="relative z-10 transform group-hover:scale-110 transition-transform duration-500">
+                            {style.icon ? (
+                                <Icon path={style.icon} size={48} className="text-white drop-shadow-md" />
+                            ) : (
+                                <span className="text-6xl font-bold text-white drop-shadow-md">{style.text}</span>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-5 flex-1 flex flex-col">
+                        <h3 className="text-lg font-bold text-gray-800 leading-snug mb-1 line-clamp-2" title={book.subjectNameBn}>
+                            {book.subjectNameBn}
+                        </h3>
+                        <p className="text-xs text-gray-500 font-medium tracking-wide uppercase mb-4 truncate">
+                            {book.subjectNameEn}
+                        </p>
+
+                        <div className="mt-auto flex gap-3 pt-2">
+                            <button 
+                                onClick={() => onClick(book.pdfUrl)}
+                                className="flex-1 bg-gray-900 hover:bg-black text-white py-2.5 rounded-xl text-sm font-medium transition-colors shadow-lg shadow-gray-200 flex items-center justify-center gap-2 group/btn"
+                            >
+                                <Icon path={Icons.BookOpen} size={16} /> 
+                                <span className="group-hover/btn:tracking-wide transition-all">পড়ুন</span>
+                            </button>
+                            <a 
+                                href={book.pdfUrl} 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2.5 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-xl transition-colors border border-gray-200"
+                                title="ডাউনলোড"
+                            >
+                                <Icon path={Icons.Download} size={18} />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        // --- COMPONENT: Sidebar Item ---
+        const SidebarItem = ({ active, onClick, titleBn, titleEn }) => (
+            <button
+                onClick={onClick}
+                className={`w-full text-left px-4 py-3 rounded-xl transition-all duration-200 flex items-center justify-between group mb-1 ${
+                    active 
+                    ? 'bg-white text-emerald-700 shadow-md border-l-4 border-emerald-500' 
+                    : 'text-gray-600 hover:bg-white/60 hover:text-emerald-600'
+                }`}
+            >
+                <div>
+                    <span className={`block text-sm font-bold ${active ? 'text-gray-900' : 'group-hover:text-gray-900'}`}>
+                        {titleBn}
+                    </span>
+                    <span className="text-[10px] uppercase tracking-wider opacity-60 font-medium">
+                        {titleEn}
+                    </span>
+                </div>
+                {active && <Icon path={Icons.ChevronRight} size={16} className="text-emerald-500" />}
+            </button>
+        );
+
+        // --- MAIN APP ---
         const App = () => {
-            const [selectedClass, setSelectedClass] = useState(BOOK_DATA.classes[0]);
+            const [classes, setClasses] = useState([]);
+            const [selectedClass, setSelectedClass] = useState(null);
             const [searchTerm, setSearchTerm] = useState("");
             const [sidebarOpen, setSidebarOpen] = useState(false);
             const [pdfUrl, setPdfUrl] = useState(null);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
 
-            // Filter books based on search
-            const filteredBooks = selectedClass.books.filter(book => 
-                book.subjectNameBn.includes(searchTerm) || 
-                book.subjectNameEn.toLowerCase().includes(searchTerm.toLowerCase())
+            useEffect(() => {
+                fetch('https://abswerit.github.io/SchoolBooks/textbooks.json')
+                    .then(res => res.ok ? res.json() : Promise.reject('Network Error'))
+                    .then(data => {
+                        if (data?.classes?.length) {
+                            setClasses(data.classes);
+                            setSelectedClass(data.classes[0]);
+                        } else {
+                            setError("কোনো ডাটা পাওয়া যায়নি");
+                        }
+                        setLoading(false);
+                    })
+                    .catch(err => {
+                        setError("ইন্টারনেট সংযোগ চেক করুন");
+                        setLoading(false);
+                    });
+            }, []);
+
+            const filteredBooks = selectedClass?.books.filter(book => 
+                (book.subjectNameBn?.includes(searchTerm)) || 
+                (book.subjectNameEn?.toLowerCase().includes(searchTerm.toLowerCase()))
+            ) || [];
+
+            // Loading View
+            if (loading) return (
+                <div className="h-screen w-full flex flex-col items-center justify-center bg-gray-50">
+                    <div className="relative">
+                        <div className="w-16 h-16 border-4 border-emerald-200 border-t-emerald-600 rounded-full animate-spin"></div>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <Icon path={Icons.BookOpen} size={24} className="text-emerald-600" />
+                        </div>
+                    </div>
+                    <h2 className="mt-4 text-xl font-bold text-gray-700 animate-pulse">লাইব্রেরি লোড হচ্ছে...</h2>
+                </div>
             );
 
-            // Prevent scrolling when PDF modal is open
-            useEffect(() => {
-                if(pdfUrl) {
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    document.body.style.overflow = 'auto';
-                }
-            }, [pdfUrl]);
+            // Error View
+            if (error) return (
+                <div className="h-screen flex flex-col items-center justify-center bg-gray-50 p-6 text-center">
+                    <div className="p-4 bg-red-100 text-red-600 rounded-full mb-4"><Icon path={Icons.X} size={48} /></div>
+                    <h2 className="text-2xl font-bold text-gray-800">দুঃখিত!</h2>
+                    <p className="text-gray-500 mt-2">{error}</p>
+                    <button onClick={() => window.location.reload()} className="mt-6 px-8 py-3 bg-gray-900 text-white rounded-xl hover:bg-black transition">রিফ্রেশ করুন</button>
+                </div>
+            );
 
             return (
-                <div className="flex h-screen overflow-hidden text-gray-800">
+                <div className="flex h-screen overflow-hidden bg-[#F3F4F6]">
                     
-                    {/* Mobile Sidebar Overlay */}
+                    {/* Backdrop for Mobile Sidebar */}
                     {sidebarOpen && (
                         <div 
-                            className="fixed inset-0 bg-black bg-opacity-50 z-20 lg:hidden"
+                            className="fixed inset-0 bg-black/40 z-30 lg:hidden backdrop-blur-sm transition-opacity"
                             onClick={() => setSidebarOpen(false)}
                         ></div>
                     )}
 
                     {/* Sidebar */}
-                    <aside className={`fixed lg:static inset-y-0 left-0 w-72 glass-panel border-r border-gray-200 transform transition-transform duration-300 z-30 lg:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} flex flex-col`}>
-                        <div className="p-6 border-b border-gray-100 flex items-center gap-3">
-                            <div className="p-2 bg-emerald-100 rounded-lg">
-                                <Book className="text-emerald-600" size={24} />
+                    <aside className={`fixed lg:static inset-y-0 left-0 w-80 bg-gray-50/80 border-r border-gray-200 transform transition-transform duration-300 z-40 lg:translate-x-0 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} flex flex-col glass`}>
+                        <div className="p-6 flex items-center gap-3 border-b border-gray-200/50 bg-white/50">
+                            <div className="w-10 h-10 bg-gradient-to-tr from-emerald-500 to-teal-400 rounded-xl flex items-center justify-center shadow-lg shadow-emerald-200 text-white">
+                                <Icon path={Icons.Home} size={20} />
                             </div>
                             <div>
-                                <h1 className="text-xl font-bold text-gray-800">NCTB লাইব্রেরি</h1>
-                                <p className="text-xs text-gray-500">ডিজিটাল পাঠ্যপুস্তক</p>
+                                <h1 className="text-xl font-bold text-gray-800 leading-none">NCTB</h1>
+                                <p className="text-xs font-medium text-emerald-600 tracking-wider">SMART LIBRARY</p>
                             </div>
                         </div>
 
-                        <div className="flex-1 overflow-y-auto p-4 space-y-2 no-scrollbar">
-                            <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3 px-2">শ্রেণি নির্বাচন করুন</h3>
-                            {BOOK_DATA.classes.map((cls, idx) => (
-                                <button
+                        <div className="flex-1 overflow-y-auto p-4 hide-scroll">
+                            <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 px-2 mt-2">শ্রেণি তালিকা</div>
+                            {classes.map((cls, idx) => (
+                                <SidebarItem 
                                     key={idx}
+                                    active={selectedClass?.classTag === cls.classTag}
                                     onClick={() => {
                                         setSelectedClass(cls);
                                         setSidebarOpen(false);
                                         setSearchTerm("");
                                     }}
-                                    className={`w-full text-left px-4 py-3 rounded-xl transition-all flex items-center justify-between group ${
-                                        selectedClass.classTag === cls.classTag 
-                                        ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-200' 
-                                        : 'hover:bg-white hover:shadow-md text-gray-600'
-                                    }`}
-                                >
-                                    <div className="flex flex-col">
-                                        <span className="font-semibold text-sm">{cls.classNameBn}</span>
-                                        <span className={`text-xs ${selectedClass.classTag === cls.classTag ? 'text-emerald-100' : 'text-gray-400'}`}>{cls.classNameEn}</span>
-                                    </div>
-                                    {selectedClass.classTag === cls.classTag && <ChevronRight size={16} />}
-                                </button>
+                                    titleBn={cls.classNameBn}
+                                    titleEn={cls.classNameEn}
+                                />
                             ))}
-                        </div>
-                        
-                        <div className="p-4 border-t border-gray-100 text-center">
-                            <p className="text-xs text-gray-400">© 2024 NCTB Digital Library</p>
                         </div>
                     </aside>
 
                     {/* Main Content */}
-                    <main className="flex-1 flex flex-col h-screen overflow-hidden relative">
-                        {/* Header */}
-                        <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-4 flex items-center justify-between z-10 sticky top-0">
-                            <div className="flex items-center gap-3">
-                                <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-2 hover:bg-gray-100 rounded-lg">
-                                    <Menu size={24} />
+                    <main className="flex-1 flex flex-col h-screen overflow-hidden relative w-full">
+                        {/* Navbar */}
+                        <header className="px-6 py-4 glass z-20 flex items-center justify-between sticky top-0 border-b border-white/50">
+                            <div className="flex items-center gap-4">
+                                <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-2 bg-white rounded-lg shadow-sm text-gray-600 hover:text-emerald-600 transition">
+                                    <Icon path={Icons.Menu} size={24} />
                                 </button>
                                 <div>
-                                    <h2 className="text-xl font-bold text-gray-800 hidden md:block">{selectedClass.classNameBn}</h2>
-                                    <h2 className="text-lg font-bold text-gray-800 md:hidden">পাঠ্যপুস্তক</h2>
+                                    <h2 className="text-xl lg:text-2xl font-bold text-gray-800 hidden sm:block">
+                                        {selectedClass?.classNameBn}
+                                    </h2>
+                                    <span className="text-xs font-medium text-gray-500 hidden sm:block">
+                                        {selectedClass?.classNameEn} • {filteredBooks.length} টি বই
+                                    </span>
                                 </div>
                             </div>
 
-                            <div className="relative w-full max-w-md ml-4">
-                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
+                            <div className="relative group w-full max-w-xs sm:max-w-md">
+                                <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-gray-400 group-focus-within:text-emerald-600 transition-colors">
+                                    <Icon path={Icons.Search} size={18} />
+                                </div>
                                 <input 
                                     type="text" 
-                                    placeholder="বই খুঁজুন... (যেমন: বাংলা, Math)" 
-                                    className="w-full pl-10 pr-4 py-2.5 bg-gray-100 border-none rounded-full text-sm focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all outline-none"
+                                    placeholder="বই খুঁজুন..." 
+                                    className="w-full pl-10 pr-4 py-3 bg-white border border-gray-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 outline-none transition-all shadow-sm placeholder-gray-400"
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
                                 />
                             </div>
                         </header>
 
-                        {/* Content Area */}
-                        <div className="flex-1 overflow-y-auto p-6 lg:p-10 scroll-smooth">
+                        {/* Content Grid */}
+                        <div className="flex-1 overflow-y-auto p-6 lg:p-8 hide-scroll">
                             <div className="max-w-7xl mx-auto">
-                                <div className="flex items-center justify-between mb-6">
-                                    <h3 className="text-lg font-semibold text-gray-700 flex items-center gap-2">
-                                        <GraduationCap size={20} className="text-emerald-600"/>
-                                        বিষয়সমূহ ({filteredBooks.length})
-                                    </h3>
+                                {/* Mobile Title */}
+                                <div className="sm:hidden mb-6">
+                                    <h2 className="text-xl font-bold text-gray-800">{selectedClass?.classNameBn}</h2>
+                                    <p className="text-xs text-gray-500">{filteredBooks.length} টি বই পাওয়া গেছে</p>
                                 </div>
-                                
-                                {filteredBooks.length > 0 ? (
-                                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-                                        {filteredBooks.map((book, idx) => (
-                                            <div key={idx} className="book-card bg-white rounded-2xl p-5 shadow-sm border border-gray-100 transition-all flex flex-col h-full group">
-                                                <div className="h-32 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center mb-4 relative overflow-hidden">
-                                                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity"></div>
-                                                    {getIconForSubject(book.subjectNameEn)}
-                                                </div>
-                                                
-                                                <div className="flex-1">
-                                                    <h4 className="font-bold text-gray-800 text-lg leading-tight mb-1">{book.subjectNameBn}</h4>
-                                                    <p className="text-sm text-gray-500 mb-4">{book.subjectNameEn}</p>
-                                                </div>
 
-                                                <div className="flex gap-2 mt-auto">
-                                                    <button 
-                                                        onClick={() => setPdfUrl(book.pdfUrl)}
-                                                        className="flex-1 flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white py-2.5 rounded-lg text-sm font-medium transition-colors"
-                                                    >
-                                                        <BookOpen size={16} /> পড়ুন
-                                                    </button>
-                                                    <a 
-                                                        href={book.pdfUrl} 
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="flex items-center justify-center p-2.5 bg-gray-50 text-gray-600 hover:bg-gray-800 hover:text-white rounded-lg transition-colors"
-                                                        title="ডাউনলোড করুন"
-                                                    >
-                                                        <Download size={18} />
-                                                    </a>
-                                                </div>
-                                            </div>
+                                {filteredBooks.length > 0 ? (
+                                    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-6">
+                                        {filteredBooks.map((book, idx) => (
+                                            <BookCard 
+                                                key={idx} 
+                                                book={book} 
+                                                onClick={setPdfUrl} 
+                                            />
                                         ))}
                                     </div>
                                 ) : (
-                                    <div className="flex flex-col items-center justify-center h-64 text-center">
-                                        <div className="bg-gray-100 p-4 rounded-full mb-3">
-                                            <Search className="text-gray-400" size={32} />
+                                    <div className="flex flex-col items-center justify-center py-20 text-center opacity-60">
+                                        <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+                                            <Icon path={Icons.Search} size={40} className="text-gray-400" />
                                         </div>
-                                        <h3 className="text-lg font-medium text-gray-600">কোনো বই পাওয়া যায়নি</h3>
-                                        <p className="text-gray-400 text-sm">অন্য কীওয়ার্ড দিয়ে চেষ্টা করুন</p>
+                                        <h3 className="text-xl font-bold text-gray-600">কোনো বই পাওয়া যায়নি</h3>
+                                        <p className="text-sm text-gray-500">বানান সঠিক কিনা যাচাই করুন</p>
                                     </div>
                                 )}
+                                <div className="h-20"></div>
                             </div>
-                            
-                            <div className="h-10"></div> {/* Spacer */}
                         </div>
                     </main>
 
-                    {/* PDF Reader Modal */}
+                    {/* PDF Modal */}
                     {pdfUrl && (
-                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-                            <div className="bg-white w-full max-w-6xl h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
-                                <div className="flex items-center justify-between p-4 border-b border-gray-100 bg-white">
-                                    <h3 className="font-semibold text-gray-700">বই প্রিভিউ</h3>
+                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4 animate-[fadeIn_0.2s_ease-out]">
+                            <div className="bg-white w-full max-w-6xl h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[zoomIn_0.3s_ease-out] relative">
+                                {/* Modal Header */}
+                                <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 bg-white z-10">
+                                    <div className="flex items-center gap-2">
+                                        <div className="p-2 bg-emerald-100 text-emerald-600 rounded-lg">
+                                            <Icon path={Icons.BookOpen} size={20} />
+                                        </div>
+                                        <span className="font-bold text-gray-700">বই প্রিভিউ</span>
+                                    </div>
                                     <div className="flex gap-2">
-                                        <a href={pdfUrl} target="_blank" className="px-4 py-2 text-xs font-medium bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition">
+                                        <a 
+                                            href={pdfUrl} 
+                                            target="_blank" 
+                                            className="px-4 py-2 text-sm font-semibold bg-gray-900 text-white rounded-lg hover:bg-black transition shadow-lg shadow-gray-200"
+                                        >
                                             ব্রাউজারে খুলুন
                                         </a>
                                         <button 
                                             onClick={() => setPdfUrl(null)}
-                                            className="p-2 hover:bg-red-50 text-gray-500 hover:text-red-500 rounded-lg transition"
+                                            className="p-2 bg-gray-100 hover:bg-red-50 text-gray-600 hover:text-red-500 rounded-lg transition"
                                         >
-                                            <X size={20} />
+                                            <Icon path={Icons.X} size={24} />
                                         </button>
                                     </div>
                                 </div>
-                                <div className="flex-1 bg-gray-100 relative">
+                                {/* PDF Viewer */}
+                                <div className="flex-1 bg-gray-100 relative w-full h-full">
                                     <iframe 
                                         src={pdfUrl} 
                                         className="w-full h-full border-0"
                                         title="PDF Viewer"
                                     ></iframe>
-                                    {/* Fallback msg if iframe fails */}
-                                    <div className="absolute inset-0 flex items-center justify-center -z-10 text-gray-400">
-                                        <p>PDF লোড হচ্ছে...</p>
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center -z-10 text-gray-400">
+                                        <Icon path={Icons.Loader} size={40} className="animate-spin mb-2" />
+                                        <p className="text-sm font-medium">পিডিএফ লোড হচ্ছে...</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     )}
-
                 </div>
             );
         };
